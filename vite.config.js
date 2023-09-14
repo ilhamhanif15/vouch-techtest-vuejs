@@ -9,6 +9,13 @@ export default defineConfig({
     vue(),
     svgLoader(),
   ],
+  server: {
+    host: true,
+    port: 8000,
+    watch: {
+      usePolling: true
+    },
+  },
   resolve: {
     alias: [
       { find: '@', replacement: fileURLToPath(new URL('./src', import.meta.url)) },
