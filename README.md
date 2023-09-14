@@ -2,7 +2,7 @@
 15 September 2023
 
 # Installation Guide
-There is 2 Repository one for Backend and the other one for Frontend
+There are 2 Repository one for Backend and the other one for Frontend
 
 Repository for Backend :
 https://github.com/ilhamhanif15/vouch-techtest-nodejs
