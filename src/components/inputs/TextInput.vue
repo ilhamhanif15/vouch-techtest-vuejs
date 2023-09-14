@@ -11,13 +11,14 @@
       :id="id"
       :name="name"
       :class="{
-        'bg-secondary-light py-4 px-4 border-secondary-darker border-2 rounded-lg outline-none focus:border-blue-400 duration-200 w-full disabled:bg-gray-100 disabled:cursor-not-allowed': true,
+        'bg-secondary-light py-4 px-4 border-secondary-darker border-2 outline-none focus:border-blue-400 duration-200 disabled:bg-gray-100 disabled:cursor-not-allowed': true,
         'border-red-200' : errorMessage !== null
       }"
       :placeholder="placeholder"
       :type="type"
       :value="props.modelValue"
       :disabled="isDisabled"
+      v-bind="$attrs"
       @input="updateValue($event.target.value)"
     >
     <small
